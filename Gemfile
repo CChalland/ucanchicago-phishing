@@ -46,3 +46,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Encrypt and Decrypt data
 gem 'aescrypt'
+
+# Email analytics for Rails
+gem 'ahoy_email'
