@@ -88,7 +88,17 @@ let ShowPage = {
   computed: {}
 };
 
-
+let ThanksPage = {
+  template: "#thanks-page",
+  data: function () {
+    return {
+      message: "Thank you for your participation, and excellence, you'll receive your voucher within 48 to 72 hours..."
+    };
+  },
+  created: function () {},
+  methods: {},
+  computed: {}
+};
 
 let router = new VueRouter({
   routes: [{
