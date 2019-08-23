@@ -60,8 +60,7 @@ let LoginPage = {
       axios
         .post("/user_token", params)
         .then(function(response) {
-          axios.defaults.headers.common["Authorization"] =
-            "Bearer " + response.data.jwt;
+          axios.defaults.headers.common["Authorization"] = "Bearer " + response.data.jwt;
           localStorage.setItem("jwt", response.data.jwt);
           router.push("/pwned");
         })
@@ -93,6 +92,19 @@ let ShowPage = {
       }.bind(this)
     );
   },
+  methods: {},
+  computed: {}
+};
+
+let ThanksPage = {
+  template: "#thanks-page",
+  data: function() {
+    return {
+      message:
+        "Thank you for your participation, and excellence, you'll receive your voucher within 48 to 72 hours..."
+    };
+  },
+  created: function() {},
   methods: {},
   computed: {}
 };
